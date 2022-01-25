@@ -1,0 +1,22 @@
+  button {
+    padding: 12px 28px; 
+    border-radius: 8px;
+
+}
+
+span {
+font-size: 100px;
+position: relative; left: 140px; bottom: 50px;
+border-style: solid;
+
+}
+
+
+h1 {
+    font-size: 100px; 
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+div {
+    border-style: solid;
+}
