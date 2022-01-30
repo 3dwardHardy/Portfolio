@@ -1,0 +1,86 @@
+@-webkit-keyframes blink {
+    25% { border-color: blue;}
+    50% { border-color:red; }
+    50% { border-color:darkgoldenrod; }
+
+    50% {color: blue;}
+   
+}
+ul {
+    position:fixed;
+    top:0;
+    left:0;
+    border-radius: 100px;
+    
+    
+}
+li {
+    margin-right: 50px;
+    background-color: black;
+    -webkit-animation: blink 2s infinite;
+    -moz-animation:    blink 2s infinite;
+    -ms-animation:     blink 2s infinite;
+    border: 3px solid;
+}
+
+h1 {
+    
+    margin-bottom: 40px;
+    border-style: solid hidden hidden hidden;
+    border-color: grey !important;
+    -webkit-animation: blink 7s infinite;
+    -moz-animation:    blink 4s infinite;
+    -ms-animation:     blink 4s infinite;
+    
+}
+
+a {
+    display: inline-block;
+    width: 9em;
+    text-align: center;
+}
+a:link {
+    color: darkgreen !important;
+}
+
+a:visited {
+    color: white !important
+    
+}
+
+a:hover{
+    color: darkgoldenrod !important;
+}
+a:active {
+    color: red !important;
+}
+
+#Dimg {
+    height: 950px;
+    width: 100%;
+    object-fit: fill;
+
+}
+
+h2 {
+    position: relative;
+    color: black;
+    
+    padding: 10px;
+    font-size: 30px !important;
+    border-color: grey;
+    border-style: hidden hidden solid hidden;
+    border-radius: 5px;
+    ;
+}
+
+#linkD {
+    height: 50px;
+    
+}
+
+
+
+
+
+
