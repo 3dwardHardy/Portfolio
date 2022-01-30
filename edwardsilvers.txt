@@ -1,4 +1,0 @@
-some text added
-This is a simple counter project I found on youtube.
-
-Some issues I worked out during the project. I had my <script> tag in main, however it was at the top of main. My project wasn't working and after moving some research, I learned that script needs to be at the bottom of main.
