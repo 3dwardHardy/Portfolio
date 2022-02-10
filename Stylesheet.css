@@ -1,86 +1,116 @@
-@-webkit-keyframes blink {
-    25% { border-color: blue;}
-    50% { border-color:red; }
-    50% { border-color:darkgoldenrod; }
+* {
+    z-index: 1;
+}
 
-    50% {color: blue;}
-   
-}
-ul {
-    position:fixed;
-    top:0;
-    left:0;
-    border-radius: 100px;
+
+#skyimg {
     
-    
-}
-li {
-    margin-right: 50px;
-    background-color: black;
-    -webkit-animation: blink 2s infinite;
-    -moz-animation:    blink 2s infinite;
-    -ms-animation:     blink 2s infinite;
-    border: 3px solid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0 !important;
 }
 
 h1 {
-    
-    margin-bottom: 40px;
-    border-style: solid hidden hidden hidden;
-    border-color: grey !important;
-    -webkit-animation: blink 7s infinite;
-    -moz-animation:    blink 4s infinite;
-    -ms-animation:     blink 4s infinite;
+    color: whitesmoke;
     
 }
 
+ul {
+    width: 1em;
+    position: fixed;
+    top: 8em
+    
+}
+
+li {
+    color: whitesmoke;
+    list-style: none;
+    font-size: 15px;
+    font-family: '8BITWONDERNominal';
+   font-weight: normal;
+   font-style: normal;
+    padding-bottom: 50px;
+    left: 0px;
+    margin-right: 20px;
+    width: 1em;
+    
+    
+    
+
+}
 a {
-    display: inline-block;
-    width: 9em;
-    text-align: center;
-}
-a:link {
-    color: darkgreen !important;
-}
-
-a:visited {
-    color: white !important
+    overflow: hidden;
+    width: 1em;
+    line-height: 20px;
+    
     
 }
 
-a:hover{
-    color: darkgoldenrod !important;
-}
-a:active {
-    color: red !important;
-}
-
-#Dimg {
-    height: 950px;
-    width: 100%;
-    object-fit: fill;
-
-}
-
-h2 {
+#me {
     position: relative;
-    color: black;
+    color: red;
+    bottom: 50px;
+    width: 3em !important;
     
-    padding: 10px;
-    font-size: 30px !important;
-    border-color: grey;
-    border-style: hidden hidden solid hidden;
-    border-radius: 5px;
-    ;
-}
-
-#linkD {
-    height: 50px;
+    
     
 }
 
+#verL {
+    position: fixed;
+    border-left: 2px solid red;
+    height: 400px;
+    margin-top: 1px;
+    left: 42px;
+    top: 51em;
+    animation: colorchange 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
 
+#verT {
+    position: fixed;
+    border-left: 2px solid red;
+    height: 400px;
+    margin-top: 1px;
+    left: 42px;
+    bottom: 51em;
+    animation: colorchange 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
 
+#icon {
+    height: 3em;
+}
 
+@keyframes colorchange {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    50% {
+      border-color: white;
+    }
+    75% {
+        border-color: green
+    }
+    100% {
+        border-color: red;
+    }
+}
 
+#footer {
+    
+}
 
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 5em;
+    border-radius: 10px;
+}
