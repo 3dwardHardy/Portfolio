@@ -53,15 +53,26 @@
        </div>   
     
     
-       <form action="email.php" id="form" method="post" name="form">
-        <input name="vname" placeholder="Your Name" type="text" value="">
-        <input name="vemail" placeholder="Your Email" type="text" value="">
-        <input name="sub" placeholder="Subject" type="text" value="">
-        <label>Like what you see? Tell me about it.</label>
-        <textarea name="msg" placeholder="Type your text here..."></textarea>
-        <input id="send" name="submit" type="submit" value="Send Feedback">
-        </form>
-        <h3><?php include "secure_email_code.php"?></h3>
+       <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
           
         </footer>
